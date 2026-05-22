@@ -1,0 +1,38 @@
+services:
+  bot:
+    build: .
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    environment:
+      ENVIRONMENT: production
+      PORT: "8000"
+      SQLITE_URL: sqlite+aiosqlite:////app/data/job_finder_bot.db
+
+  # Optional PostgreSQL (uncomment to use instead of SQLite)
+  # postgres:
+  #   image: postgres:16-alpine
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_USER: jobbot
+  #     POSTGRES_PASSWORD: jobbot
+  #     POSTGRES_DB: job_finder
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+  # bot:
+  #   ...
+  #   environment:
+  #     DATABASE_URL: postgresql+asyncpg://jobbot:jobbot@postgres:5432/job_finder
+  #   depends_on:
+  #     - postgres
+
+# volumes:
+#   pgdata:

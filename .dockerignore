@@ -1,0 +1,8 @@
+.venv
+venv
+__pycache__
+.git
+logs
+*.db
+.env
+.DS_Store
