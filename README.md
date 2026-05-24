@@ -4,7 +4,7 @@
 
 Built as a **portfolio backend project**: layered architecture, async SQLAlchemy, Docker, CI, and deploy paths for Railway, Render, and VPS.
 
-![CI](https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/job_finder_bot/ci.yml?label=CI)
+![CI](https://img.shields.io/github/actions/workflow/status/artem-zadvornyi/AI-Job-Finder/ci.yml?label=CI)
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -77,30 +77,6 @@ The codebase demonstrates **real backend practices**: dependency injection, repo
 | Jobs API | Remotive REST |
 | Quality | pytest, Ruff, GitHub Actions |
 | Deploy | Docker, Docker Compose, Procfile |
-
----
-
-## Screenshots
-
-Add PNG captures under `docs/screenshots/` before sharing the repo publicly:
-
-| File | Suggested capture |
-|------|-------------------|
-| [docs/screenshots/start.png](docs/screenshots/start.png) | `/start` onboarding flow |
-| [docs/screenshots/jobs-ai-match.png](docs/screenshots/jobs-ai-match.png) | `/jobs` with AI match score and paging |
-| [docs/screenshots/saved.png](docs/screenshots/saved.png) | `/saved` bookmarks |
-| [docs/screenshots/resume.png](docs/screenshots/resume.png) | `/resume` upload and `/my_resume` |
-| [docs/screenshots/health.png](docs/screenshots/health.png) | `/health` or `curl /health` JSON |
-| [docs/screenshots/docker.png](docs/screenshots/docker.png) | `docker compose up` / healthy container |
-
-```markdown
-![Start flow](docs/screenshots/start.png)
-![Jobs with AI match](docs/screenshots/jobs-ai-match.png)
-![Saved jobs](docs/screenshots/saved.png)
-![Resume profile](docs/screenshots/resume.png)
-![Health check](docs/screenshots/health.png)
-![Docker](docs/screenshots/docker.png)
-```
 
 ---
 
