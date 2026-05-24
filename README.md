@@ -234,6 +234,18 @@ git push -u origin main
 
 If a token was ever pushed, revoke it in [@BotFather](https://t.me/BotFather) and set a new one in your host’s environment variables only.
 
+### `git push` fails with 401 or Permission denied?
+
+That is **GitHub authentication**, not a bot bug. You cancelled `gh auth login` earlier — finish login, then push:
+
+```bash
+gh auth login          # complete browser login (do not Ctrl+C)
+gh auth setup-git
+git push -u origin main
+```
+
+If Cursor’s terminal keeps failing: `unset GIT_ASKPASS` then push again. Full guide: [docs/GITHUB_PUSH.md](docs/GITHUB_PUSH.md).
+
 ---
 
 ## Project layout
