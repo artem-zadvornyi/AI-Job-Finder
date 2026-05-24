@@ -9,8 +9,6 @@ Built as a **portfolio backend project**: layered architecture, async SQLAlchemy
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-> Replace `YOUR_USERNAME` in the CI badge after publishing to GitHub.
-
 ---
 
 ## Project pitch
